@@ -229,7 +229,7 @@ export default function Hero() {
 
                 {/* Instagram */}
                 <motion.button
-                  onClick={() => handleExternalLink('https://instagram.com/mr.white-beard')}
+                  onClick={() => handleExternalLink('https://instagram.com/mr.white_beard')}
                   className="w-full flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
                   whileHover={{ x: 5 }}
                 >
