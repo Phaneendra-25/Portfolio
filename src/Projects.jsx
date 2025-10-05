@@ -9,8 +9,8 @@ export default function Projects() {
       title: "Portfolio Website",
       description: "Modern responsive portfolio built with React, Framer Motion, and Tailwind CSS. Features smooth animations and interactive UI components.",
       technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-      liveUrl: "#", // Add your actual portfolio URL
-      githubUrl: "#", // Add your actual GitHub URL
+      liveUrl: "https://portfolio-five-henna-gkhl64gw9w.vercel.app/", // Add your actual portfolio URL
+      githubUrl: "https://github.com/Phaneendra-25", // Add your actual GitHub URL
       featured: true
     },
     {

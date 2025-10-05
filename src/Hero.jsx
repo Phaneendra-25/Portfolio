@@ -195,7 +195,7 @@ export default function Hero() {
               <div className="space-y-4">
                 {/* GitHub */}
                 <motion.button
-                  onClick={() => handleExternalLink('https://github.com/yourusername')}
+                  onClick={() => handleExternalLink('https://github.com/Phaneendra-25')}
                   className="w-full flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
                   whileHover={{ x: 5 }}
                 >
@@ -212,7 +212,7 @@ export default function Hero() {
 
                 {/* Email */}
                 <motion.button
-                  onClick={() => handleExternalLink('mailto:your.email@gmail.com')}
+                  onClick={() => handleExternalLink('mailto:phaneendhranaidu@gmail.com')}
                   className="w-full flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
                   whileHover={{ x: 5 }}
                 >
@@ -223,13 +223,13 @@ export default function Hero() {
                   </div>
                   <div className="text-left">
                     <p className="text-white font-semibold">Email</p>
-                    <p className="text-gray-400 text-sm">your.email@gmail.com</p>
+                    <p className="text-gray-400 text-sm">phaneendhranaidu@gmail.com</p>
                   </div>
                 </motion.button>
 
                 {/* Instagram */}
                 <motion.button
-                  onClick={() => handleExternalLink('https://instagram.com/yourusername')}
+                  onClick={() => handleExternalLink('https://instagram.com/mr.white-beard')}
                   className="w-full flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
                   whileHover={{ x: 5 }}
                 >
