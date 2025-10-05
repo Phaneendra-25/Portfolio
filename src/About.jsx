@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Code, Palette, Zap, Users, X, ChevronDown } from 'lucide-react'
+import { Code, Palette, Zap, Users, X, ChevronDown, GraduationCap, MapPin, Calendar } from 'lucide-react'
 import { useState } from 'react'
 
 export default function About() {
@@ -12,10 +12,38 @@ export default function About() {
     { icon: Users, label: 'Collaboration', description: 'Team Leadership & Mentoring' }
   ]
 
-  // Update these details with your information
+  // Updated with your education details
   const aboutDetails = {
-    education: "Your educational background (e.g., B.Tech in Computer Science)",
-    experience: "2+ years in web development", // Update with your experience
+    education: {
+      btech: {
+        degree: "B.Tech in Computer Science",
+        status: "3rd Year (Currently Pursuing)",
+        duration: "2022 - Present"
+      },
+      diploma: {
+        degree: "Diploma in Computer Science",
+        institution: "Government Polytechnic",
+        years: [
+          {
+            year: "2nd Year",
+            location: "Obulavaripalli",
+            note: "Transferred"
+          },
+          {
+            year: "1st Year", 
+            location: "Pillarippattu (Puttur)",
+            note: ""
+          }
+        ],
+        duration: "2019 - 2022"
+      },
+      school: {
+        degree: "Secondary School (10th)",
+        institution: "Victory High School", 
+        duration: "2018 - 2019"
+      }
+    },
+    experience: "2+ years in web development",
     specialization: "Full-stack development with focus on React and Node.js",
     passions: [
       "Building responsive and user-friendly applications",
@@ -187,12 +215,61 @@ export default function About() {
               {/* Education & Background */}
               <div>
                 <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
-                  <Users className="w-5 h-5 text-blue-400" />
-                  Background & Education
+                  <GraduationCap className="w-5 h-5 text-blue-400" />
+                  Education Background
                 </h4>
-                <p className="text-gray-300 leading-relaxed">
-                  {aboutDetails.education}
-                </p>
+                <div className="space-y-6">
+                  {/* B.Tech */}
+                  <div className="p-4 bg-white/5 rounded-xl border border-white/10">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                      <h5 className="text-lg font-semibold text-white">{aboutDetails.education.btech.degree}</h5>
+                      <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium border border-blue-500/30">
+                        {aboutDetails.education.btech.status}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-4 text-gray-400 text-sm">
+                      <Calendar size={16} />
+                      <span>{aboutDetails.education.btech.duration}</span>
+                    </div>
+                  </div>
+
+                  {/* Diploma */}
+                  <div className="p-4 bg-white/5 rounded-xl border border-white/10">
+                    <h5 className="text-lg font-semibold text-white mb-3">{aboutDetails.education.diploma.degree}</h5>
+                    <p className="text-gray-300 mb-3">{aboutDetails.education.diploma.institution}</p>
+                    <div className="space-y-2">
+                      {aboutDetails.education.diploma.years.map((year, index) => (
+                        <div key={index} className="flex items-center gap-4 text-gray-400 text-sm">
+                          <Calendar size={16} />
+                          <span className="font-medium min-w-[60px]">{year.year}:</span>
+                          <span className="flex items-center gap-1">
+                            <MapPin size={14} />
+                            {year.location}
+                          </span>
+                          {year.note && (
+                            <span className="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs border border-orange-500/30">
+                              {year.note}
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-400 text-sm mt-3">
+                      <Calendar size={16} />
+                      <span>{aboutDetails.education.diploma.duration}</span>
+                    </div>
+                  </div>
+
+                  {/* 10th Grade */}
+                  <div className="p-4 bg-white/5 rounded-xl border border-white/10">
+                    <h5 className="text-lg font-semibold text-white mb-2">{aboutDetails.education.school.degree}</h5>
+                    <p className="text-gray-300 mb-2">{aboutDetails.education.school.institution}</p>
+                    <div className="flex items-center gap-2 text-gray-400 text-sm">
+                      <Calendar size={16} />
+                      <span>{aboutDetails.education.school.duration}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Technical Skills */}
