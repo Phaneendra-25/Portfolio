@@ -372,7 +372,7 @@ export default function Projects() {
                 Get In Touch
               </motion.button>
               <motion.button
-                onClick={() => handleProjectClick('https://github.com/yourusername', 'GitHub')}
+                onClick={() => handleProjectClick('https://github.com/Phaneendra-25', 'GitHub')}
                 className="px-6 py-3 border border-green-400 text-green-400 rounded-lg font-semibold hover:bg-green-400/10 transition-all group"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
