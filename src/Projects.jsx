@@ -25,9 +25,9 @@ export default function Projects() {
       title: "Weather Dashboard",
       description: "Beautiful weather application with interactive maps, detailed forecasts, and location-based services using modern APIs.",
       technologies: ["Vue.js", "Chart.js", "Mapbox", "Weather API"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      liveUrl: "https://weather-dashboard-six-amber.vercel.app/",
+      githubUrl: "https://github.com/Phaneendra-25/Weather-Dashboard",
+      featured: true
     },
     {
       title: "E-Commerce Store",
