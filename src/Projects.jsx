@@ -14,14 +14,6 @@ export default function Projects() {
       featured: true
     },
     {
-      title: "Task Manager Pro",
-      description: "Collaborative task management application with real-time updates, drag & drop functionality, and team collaboration features.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
       title: "Weather Dashboard",
       description: "Beautiful weather application with interactive maps, detailed forecasts, and location-based services using modern APIs.",
       technologies: ["Vue.js", "Chart.js", "Mapbox", "Weather API"],
