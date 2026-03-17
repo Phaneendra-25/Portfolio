@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import resume from './assets/Phaneendra_Resume.pdf' 
+import resume from './assets/resume_final.pdf' 
 import { useState, useEffect } from 'react'
 
 export default function Header() {
