@@ -9,8 +9,8 @@ export default function Projects() {
       title: "Portfolio Website",
       description: "Modern responsive portfolio built with React, Framer Motion, and Tailwind CSS. Features smooth animations and interactive UI components.",
       technologies: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-      liveUrl: "https://portfolio-five-henna-gkhl64gw9w.vercel.app/", // Add your actual portfolio URL
-      githubUrl: "https://github.com/Phaneendra-25", // Add your actual GitHub URL
+      liveUrl: "https://portfolio-five-henna-gkhl64gw9w.vercel.app/",
+      githubUrl: "https://github.com/Phaneendra-25",
       featured: true
     },
     {
@@ -22,32 +22,15 @@ export default function Projects() {
       featured: true
     },
     {
-      title: "E-Commerce Store",
-      description: "Full-stack e-commerce platform with product catalog, shopping cart, user authentication, and payment integration.",
-      technologies: ["Next.js", "Stripe", "PostgreSQL", "Auth0"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Social Media App",
-      description: "Modern social media platform with real-time messaging, post sharing, and user engagement features.",
-      technologies: ["React Native", "Firebase", "Redux", "Node.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "AI Chat Assistant",
-      description: "Intelligent chat assistant powered by machine learning with natural language processing capabilities.",
-      technologies: ["Python", "TensorFlow", "React", "FastAPI"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "AI Trading Journal",
+      description: "Multi-agent AI trading journal built with Streamlit and Google Gemini. Three specialized agents analyze trades, grade performance, and suggest strategy improvements in real time.",
+      technologies: ["Python", "Streamlit", "Gemini AI", "Pandas", "Plotly"],
+      liveUrl: "https://ai-trading-journalaudit.streamlit.app/",
+      githubUrl: "https://github.com/Phaneendra-25/AI-Trading-Journal-",
       featured: false
     }
   ]
 
-  // Function to handle project clicks
   const handleProjectClick = (url, type) => {
     if (url && url !== '#') {
       window.open(url, '_blank', 'noopener,noreferrer');
@@ -57,7 +40,6 @@ export default function Projects() {
   }
 
   const handleViewAllProjects = () => {
-    // Scroll to contact section to encourage connection
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -162,7 +144,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Here are some of my recent projects that showcase my skills in modern web development and design.
+            Here are some of my recent projects that showcase my skills in modern web development, data science, and AI.
           </p>
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-green-400 to-cyan-500 mx-auto mt-6 rounded-full"
